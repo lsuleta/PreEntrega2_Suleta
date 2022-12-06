@@ -197,7 +197,7 @@ section ul {
 
 /* movile */
 
-@media (max-width: 365px) {
+@media (max-width: 576px) {
     .content {
       display: flex;
       flex-direction: column;
