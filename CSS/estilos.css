@@ -11,7 +11,7 @@ img {
 }
 
 body {
-    font-family: 'Arimo', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 20px;
 }
 
@@ -34,6 +34,11 @@ header {
 
 header img {
     margin: 15px;
+    border-radius: 15%;
+}
+
+nav {
+    height: 60px;
 }
 
 nav ul {
@@ -65,6 +70,7 @@ h1 {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 15px;
+    place-items: center;
 }
 
 footer {
@@ -116,6 +122,13 @@ section ul {
     left: 45%;
   }
 
+.boton:hover {
+    background-color: rgb(201, 193, 193);
+}
+
+.boton a:hover {
+    color:rgb(35, 131, 209)
+}
 .centrado {
     display: grid;
     place-items: center;
@@ -127,20 +140,23 @@ section ul {
     grid-template-rows: 1fr;
 }
 
-ul li  {
+.sobre_mi li  {
     text-align: center;
     list-style: none;
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
 .contacto div img {
     border-radius: 100%;
+    display: flex;
+    
 }
 
 .contacto {
     display: grid;
-    grid-template-columns: 15% 35% 15% 35%;
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 25%);
+    justify-content: center;
 }
 
 .turnos {
@@ -170,4 +186,15 @@ ul li  {
     color: rgb(35, 131, 209);
 }
 
+.contacto .selfie {
+    margin: auto;
+}
 
+.contacto input, textarea {
+    width: 65%;
+    margin-bottom: 10px;
+}
+
+.contacto label {
+    margin-bottom: 5px;
+}
