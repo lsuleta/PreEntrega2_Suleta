@@ -23,7 +23,7 @@ html, body {
 .content {
     max-width: 1280px;
     margin: auto;
-  }
+}
 
 header {
     display: flex;
