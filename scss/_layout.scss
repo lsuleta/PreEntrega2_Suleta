@@ -96,14 +96,13 @@ section {
     }
 }
 
-
-
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(35, 131, 209);
     margin-top: 15px;
+    padding: 15px 0;
 
     h3 {
         color: rgb(201, 193, 193);
@@ -114,6 +113,15 @@ footer {
     img {
         border-radius: 100%;
         margin: 10px 10px 5px 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(201, 193, 193);
+
+        &:hover {
+            color: white;
+        }
     }
 }
 
