@@ -10,6 +10,13 @@ img {
 body {
   font-family: 'Oswald', sans-serif;
   font-size: 20px; }
+  body h1 {
+    text-align: center;
+    color: #2383d1;
+    padding-top: 15px; }
+  body .texto_sub {
+    text-decoration: underline;
+    text-align: center; }
 
 html, body {
   height: 100%;
@@ -37,3 +44,116 @@ header {
       color: #c9c1c1; }
       header nav ul a:hover {
         color: white; }
+
+section {
+  padding: 15px;
+  display: flex;
+  flex-direction: column; }
+  section div {
+    padding: 15px;
+    text-align: justify; }
+  section ul {
+    padding-left: 20px; }
+
+.centrado {
+  display: grid;
+  place-items: center; }
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr; }
+
+.sobre_mi li {
+  text-align: center;
+  list-style: none;
+  margin-top: 25px; }
+
+.contacto img {
+  margin: auto;
+  border-radius: 100%; }
+
+.turnos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center; }
+  .turnos div {
+    display: flex;
+    align-items: center; }
+  .turnos a {
+    text-decoration: none;
+    color: black; }
+    .turnos a:hover {
+      color: #2383d1; }
+
+.comentarios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center; }
+  .comentarios form {
+    display: flex;
+    flex-direction: column; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2383d1;
+  margin-top: 15px; }
+  footer h3 {
+    color: #c9c1c1;
+    font-size: 16px;
+    padding-left: 15px; }
+  footer img {
+    border-radius: 100%;
+    margin: 10px 10px 5px 0; }
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 15px;
+  place-items: center; }
+
+.link_diferente {
+  text-decoration: none; }
+
+.boton2 {
+  text-decoration: none;
+  background-color: #2383d1;
+  color: #c9c1c1;
+  padding: 10px 25px;
+  margin-top: 5px; }
+  .boton2:hover {
+    background-color: #c9c1c1;
+    color: #2383d1; }
+
+@media (max-width: 576px) {
+  .content {
+    display: flex;
+    flex-direction: column; }
+  header {
+    display: flex;
+    flex-direction: column; }
+    header nav ul {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px; }
+  .galeria {
+    display: flex; }
+  .boton {
+    left: 30%; }
+  section div h3 {
+    text-align: center; }
+  .row {
+    display: flex;
+    flex-direction: column; }
+  iframe {
+    height: 100%;
+    width: 100%; }
+  .contacto .turnos {
+    display: flex;
+    flex-direction: column; }
+  .contacto .comentarios {
+    display: flex;
+    flex-direction: column; } }

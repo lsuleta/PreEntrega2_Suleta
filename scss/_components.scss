@@ -1,0 +1,29 @@
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 15px;
+    place-items: center;
+}
+
+.link_diferente {
+    text-decoration: none;
+}
+
+.boton2 {
+    text-decoration: none;
+    background-color: rgb(35, 131, 209);
+    color: rgb(201, 193, 193);
+    padding: 10px 25px;
+    margin-top: 5px;
+
+    &:hover {
+        background-color: rgb(201, 193, 193);
+        color: rgb(35, 131, 209);
+    }
+}
+
+
+
+
+
