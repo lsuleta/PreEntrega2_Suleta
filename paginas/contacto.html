@@ -25,6 +25,7 @@
         <a href="../index.html"><img src="../multimedia/logo.jpg" alt="" /></a>
         <nav>
           <ul>
+            <li><a href="../index.html">Inicio</a></li>
             <li><a href="tratamientos.html">Tratamientos</a></li>
             <li><a href="sobreMi.html">Sobre Mi</a></li>
             <li><a href="comoLlegar.html">¿Como llegar?</a></li>
@@ -32,37 +33,39 @@
           </ul>
         </nav>
       </header>
-      <main class="contacto">
+      <main>
         <h1>Contacto</h1>
-        <section class="turnos">
-          <img src="../multimedia/foto_kinesio.jpeg" alt="" />
+        <section class="section_1">
+          
+          <div>
+            <h3>Kinesiologa</h3>
+            <p><img src="../multimedia/foto_kinesio.jpeg" alt=""></p>
             <div>
               <h3>Turnos:</h3>
+              <p>
+                Instagram: <a href="https://www.instagram.com/as.kinesiologia/">as.kinesiologia</a>
+              </p>
+              <p>Whatsapp: 341-2545277</p>
             </div>
+          </div>
+          <div class="media_c">
+            <h3>Creador de la página:</h3>
             <div>
-              <img src="../multimedia/whatsapp.png" alt="" />
-              <p>341-2545277</p>
+              <p><img src="../multimedia/foto_creador.jpeg" alt=""></p>
+              <div>
+                <h3>Comentarios:</h3>
+                <form action="https://formspree.io/f/mpzezooj" 
+                      method="POST"
+                >
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" name="nombre" id="nombre">
+                  <label for="email">E-mail:</label>
+                  <input type="email" name="email" id="email">
+                  <textarea name="comentarios" id="" cols="30" rows="5"></textarea>
+                  <input type="submit" value="Enviar" class="boton_2">
+                </form>
+              </div>
             </div>
-            <div>
-              <img src="../multimedia/instagram.png" alt="" />
-              <a href="as.kinesiologia">as.kinesiologia</a>
-            </div>
-        </section>
-        <section class="comentarios">
-          <img src="../multimedia/foto_creador.jpeg" alt="">
-            <div>
-              <h3>Comentarios:</h3>
-            </div>
-          <div>
-            <form>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email">
-                <label for="coment">Comentarios:</label>
-                <textarea name="coment" id="coment" cols="30" rows="5"></textarea>
-                <input type="submit" class="boton2">
-            </form>
           </div>
         </section>
       </main>

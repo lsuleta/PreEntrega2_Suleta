@@ -1,16 +1,11 @@
 .galeria {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 15px;
-    place-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 25px;
 }
 
-.link_diferente {
-    text-decoration: none;
-}
-
-.boton2 {
+.boton_2 {
     text-decoration: none;
     background-color: rgb(35, 131, 209);
     color: rgb(201, 193, 193);

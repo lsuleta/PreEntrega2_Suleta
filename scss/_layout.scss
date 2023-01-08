@@ -28,72 +28,55 @@ header {
     }
 }
 
-section {
-    padding: 15px;
+
+.section_1 {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
 
     div {
-        padding: 15px;
-        text-align: justify;
-    }
-
-    ul {
-        padding-left: 20px;
-    }
-}
-
-.centrado {
-    display: grid;
-    place-items: center;
-}
-
-.row {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-}
-
-.sobre_mi li  {
-    text-align: center;
-    list-style: none;
-    margin-top: 25px;
-}
-
-.contacto img {
-    margin: auto;
-    border-radius: 100%;
-}
-
-.turnos {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    place-items: center;
-
-    div {
-        display: flex;
+        flex: 1 1 700px;
+        justify-content: center;
         align-items: center;
     }
 
-    a {
-        text-decoration: none;
-        color: black;
-
-        &:hover {
-            color:rgb(35, 131, 209)
-        }
+    .lista_beneficios {
+        margin-left: 25px;
     }
-}
 
-.comentarios {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    place-items: center;
+    p, h3 {
+        text-align: center;
+    }
+
+    img {
+        border-radius: 100%;
+        justify-content: center;
+    }
 
     form {
         display: flex;
         flex-direction: column;
+        width: 300px;
+        margin-left: 30%;
+        
+        textarea {
+            margin-top: 15px;
+            padding: 10px;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        input {
+            padding: 10px;
+        }
     }
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {

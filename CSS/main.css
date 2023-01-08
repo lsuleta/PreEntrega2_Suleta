@@ -17,13 +17,19 @@ body {
   body .texto_sub {
     text-decoration: underline;
     text-align: center; }
+  body .texto_sub_2 {
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 25px; }
+  body p {
+    text-align: center; }
 
 html, body {
   height: 100%;
   width: 100%; }
 
 .content {
-  max-width: 1280px;
+  max-width: 1600px;
   margin: auto; }
 
 header {
@@ -45,54 +51,39 @@ header {
       header nav ul a:hover {
         color: white; }
 
-section {
-  padding: 15px;
+.section_1 {
   display: flex;
-  flex-direction: column; }
-  section div {
-    padding: 15px;
-    text-align: justify; }
-  section ul {
-    padding-left: 20px; }
-
-.centrado {
-  display: grid;
-  place-items: center; }
-
-.row {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr; }
-
-.sobre_mi li {
-  text-align: center;
-  list-style: none;
-  margin-top: 25px; }
-
-.contacto img {
-  margin: auto;
-  border-radius: 100%; }
-
-.turnos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  place-items: center; }
-  .turnos div {
-    display: flex;
+  justify-content: space-between;
+  margin: 15px;
+  justify-content: center;
+  align-items: center; }
+  .section_1 div {
+    flex: 1 1 700px;
+    justify-content: center;
     align-items: center; }
-  .turnos a {
-    text-decoration: none;
-    color: black; }
-    .turnos a:hover {
-      color: #2383d1; }
-
-.comentarios {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  place-items: center; }
-  .comentarios form {
+  .section_1 .lista_beneficios {
+    margin-left: 25px; }
+  .section_1 p, .section_1 h3 {
+    text-align: center; }
+  .section_1 img {
+    border-radius: 100%;
+    justify-content: center; }
+  .section_1 form {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    width: 300px;
+    margin-left: 30%; }
+    .section_1 form textarea {
+      margin-top: 15px;
+      padding: 10px;
+      font-family: 'Oswald', sans-serif; }
+    .section_1 form input {
+      padding: 10px; }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 footer {
   display: flex;
@@ -115,22 +106,18 @@ footer {
       color: white; }
 
 .galeria {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 15px;
-  place-items: center; }
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 25px; }
 
-.link_diferente {
-  text-decoration: none; }
-
-.boton2 {
+.boton_2 {
   text-decoration: none;
   background-color: #2383d1;
   color: #c9c1c1;
   padding: 10px 25px;
   margin-top: 5px; }
-  .boton2:hover {
+  .boton_2:hover {
     background-color: #c9c1c1;
     color: #2383d1; }
 
@@ -143,23 +130,18 @@ footer {
     flex-direction: column; }
     header nav ul {
       flex-direction: column;
-      align-items: center;
-      margin-bottom: 10px; }
+      align-items: center; }
   .galeria {
-    display: flex; }
-  .boton {
-    left: 30%; }
-  section div h3 {
-    text-align: center; }
-  .row {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; }
+  .section_1 {
     display: flex;
     flex-direction: column; }
+    .section_1 form {
+      margin-left: 0; }
+    .section_1 .media_c {
+      margin-top: -100%; }
   iframe {
     height: 100%;
-    width: 100%; }
-  .contacto .turnos {
-    display: flex;
-    flex-direction: column; }
-  .contacto .comentarios {
-    display: flex;
-    flex-direction: column; } }
+    width: 100%; } }
