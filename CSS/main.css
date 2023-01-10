@@ -44,7 +44,10 @@ header {
     display: flex;
     list-style: none; }
     header nav ul li {
-      padding: 0px 15px; }
+      padding: 0px 15px;
+      transition: .5s; }
+      header nav ul li:hover {
+        transform: rotate(15deg); }
     header nav ul a {
       text-decoration: none;
       color: #c9c1c1; }
@@ -111,6 +114,12 @@ footer {
   align-items: center;
   margin-top: 25px; }
 
+.aumento {
+  transform: scale 1;
+  transition: transform .5s; }
+  .aumento:hover {
+    transform: scale(1.2); }
+
 .boton_2 {
   text-decoration: none;
   background-color: #2383d1;
@@ -120,6 +129,12 @@ footer {
   .boton_2:hover {
     background-color: #c9c1c1;
     color: #2383d1; }
+
+.link_1 {
+  text-decoration: none;
+  color: #2383d1; }
+  .link_1:hover {
+    text-decoration: underline; }
 
 @media (max-width: 576px) {
   .content {

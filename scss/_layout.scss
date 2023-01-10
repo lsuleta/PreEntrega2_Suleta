@@ -15,6 +15,11 @@ header {
 
         li {
             padding: 0px 15px;
+            transition: .5s;
+
+            &:hover {
+                transform: rotate(15deg);
+            }
         }
 
         a {
@@ -40,6 +45,8 @@ header {
         flex: 1 1 700px;
         justify-content: center;
         align-items: center;
+
+        
     }
 
     .lista_beneficios {
@@ -71,7 +78,11 @@ header {
             padding: 10px;
         }
     }
+
+    
 }
+
+
 
 .center {
     display: flex;
